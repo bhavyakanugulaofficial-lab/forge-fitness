@@ -86,6 +86,17 @@
   color: var(--text);
 }
 
+/* Indic scripts are wider than Latin: tighten the nav so the CTA stays on screen. */
+html[lang='te'] .nav-link,
+html[lang='hi'] .nav-link {
+  padding-inline: 8px;
+}
+
+html[lang='ta'] .nav-link {
+  padding-inline: 6px;
+  font-size: 0.76rem;
+}
+
 .nav-link.is-active::after {
   content: '';
   position: absolute;

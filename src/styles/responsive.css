@@ -605,3 +605,19 @@
     display: none;
   }
 }
+
+/* Tamil nav items are the widest of the four scripts — collapse to the burger
+   menu a step earlier so the CTA never leaves the viewport. */
+@media (max-width: 1400px) {
+  html[lang='ta'] .nav-links {
+    display: none;
+  }
+
+  html[lang='ta'] .nav-burger {
+    display: inline-flex;
+  }
+
+  html[lang='ta'] .nav-cta {
+    display: none;
+  }
+}
